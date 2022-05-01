@@ -170,6 +170,8 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
+  height: 600px;
+  background-image: url(/images/img-overlay.jpg);
 }
 
 .hero-text {

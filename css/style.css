@@ -145,6 +145,24 @@ body {
   color: var(--accent-color);
 }
 
+.contact-nav .item::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.item-envelope::before {
+  width: 16px;
+  height: 12px;
+  background-image: url(/images/envelope.svg);
+}
+
+.item-smartphone::before {
+  width: 10px;
+  height: 16px;
+  background-image: url(/images/smartphone.svg);
+}
+
 /* Hero */
 
 .hero {
@@ -241,7 +259,7 @@ body {
 
 .advant-list .item::before{
   content: "";
-  display: inline-block;
+  display:block;
   width: 270px;
   height: 120px;
   background-color: var(--secondary-background-color);
@@ -249,6 +267,7 @@ body {
   background-position: center;
   margin-bottom: 30px;
 }
+
 
 .item-antenna::before{
 background-image: url(/images/antenna1.svg);

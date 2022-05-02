@@ -145,6 +145,16 @@ body {
   color: var(--accent-color);
 }
 
+.contact-icon{
+  fill:currentColor;
+  margin-right: 10px;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+}
+
 
 /* Hero */
 
@@ -154,8 +164,9 @@ body {
   padding-bottom: 200px;
   background-color: #2f303a;
   height: 600px;
-  min-width: 1600px;
+  max-width: 1600px;
   justify-content: center;
+  margin: 0 auto;
   background-image: url(/images/img-overlay.jpg);
 }
 

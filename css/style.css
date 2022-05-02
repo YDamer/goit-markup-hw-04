@@ -145,23 +145,6 @@ body {
   color: var(--accent-color);
 }
 
-.contact-nav .item::before {
-  content: "";
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.item-envelope::before {
-  width: 16px;
-  height: 12px;
-  background-image: url(/images/envelope.svg);
-}
-
-.item-smartphone::before {
-  width: 10px;
-  height: 16px;
-  background-image: url(/images/smartphone.svg);
-}
 
 /* Hero */
 
@@ -171,6 +154,8 @@ body {
   padding-bottom: 200px;
   background-color: #2f303a;
   height: 600px;
+  min-width: 1600px;
+  justify-content: center;
   background-image: url(/images/img-overlay.jpg);
 }
 
@@ -259,33 +244,6 @@ body {
   margin-right: 0;
 }
 
-.advant-list .item::before{
-  content: "";
-  display:block;
-  width: 270px;
-  height: 120px;
-  background-color: var(--secondary-background-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-
-.item-antenna::before{
-background-image: url(/images/antenna1.svg);
-}
-
-.item-clock::before{
-  background-image: url(/images/clock2.svg);
-}
-
-.item-diagram::before{
-  background-image: url(/images/diagram3.svg);
-}
-
-.item-astronaut::before{
-  background-image: url(/images/astronaut4.svg);
-}
 /* Чем занимаемся */
 
 .direction-section {

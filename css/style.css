@@ -164,15 +164,12 @@ body {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: rgba(47, 48, 58, 0.4);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-  0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 600px;
   max-width: 1600px;
   justify-content: center;
   margin: 0 auto;
-  background-image: url(/images/img-overlay.jpg);
-  
+  /* background-color: #c4c4c4; */
+  background: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/img-overlay.jpg);
 }
 
 .hero-text {
@@ -304,18 +301,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--secondary-background-color);
-}
-
-.item-list {
-  text-align: center;
-}
-
-.profession-item {
-  text-align: center;
-  color: var(--secondary-text-color);
-
-  font-size: 16px;
-  line-height: 1.19;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .team-name {
@@ -327,6 +313,19 @@ body {
   margin-bottom: 50px;
 }
 
+.item-list {
+  text-align: center;
+}
+
+.profession-item {
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
 .team-list {
 
   display: flex;
@@ -335,6 +334,7 @@ body {
 .team-list .item {
   margin-right: 30px;
   height: 420px;
+  
 }
 
 .team-list .item:last-child {
@@ -357,9 +357,57 @@ body {
 
 }
 
+.team-social-link{
+  justify-content: center;
+}
+
 .team-item {
  height: 168px;
  width: 270px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team-social-link {
+  display: flex;
+}
+
+.team-icon-list {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.team-icon-list:last-child {
+  margin-right: 0;
+}
+
+.team-icon-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: var(--accent-color)
+}
+
+.team-icon {
+  fill: var(--grey-icon-color)
+}
+
+.team-icon-link:hover .team-icon,
+.team-icon-link:focus .team-icon {
+  fill:var(--primari-background-color)
 }
 
 /* Постоянные клиенты */
@@ -382,19 +430,34 @@ margin-bottom: 50px;
   display: flex;
 }
 
+.clients-item{
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+}
+
 .clients-link{
   display: flex;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  margin-right: 30px
+  width: 100%;
+  height: 100%;
+
+  fill: var(--grey-icon-color);
 }
+
+.clients-link:hover,
+.clients-link:focus{
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+
 
 .clients-icon{
 margin: 16px 32px;
-fill: var(--grey-icon-color);
+
 }
 
 /* Footer */
@@ -405,9 +468,12 @@ fill: var(--grey-icon-color);
   padding: 60px 0;
 }
 
-.logo-footer {
+.footer-section .logo {
   margin-bottom: 20px;
+  display: block;
 }
+
+
 
 .address-link {
   color: var(--primari-background-color);
@@ -440,19 +506,27 @@ fill: var(--grey-icon-color);
   color: var(--accent-color);
 }
 
+.footer-container{
+  display: flex;
+  align-items: baseline;
+}
 
+.footer-item.footer-item:last-child{
+  margin-left: 70px;
+  
+}
 .footer-title{
-  padding-left: 516px;
+  display: flex;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primari-background-color);
+    margin-bottom: 20px;
 }
 .footer-icon{
   display: flex;
-  padding-left: 516px;
 }
 
 .footer-list{
@@ -473,8 +547,7 @@ border-radius: 50%;
   height: 100%;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-
+border-radius: 50%;
 }
 
 .footer-link:hover,
@@ -500,6 +573,8 @@ border-radius: 50%;
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
+  border-color: transparent;
 }
 
 .button-filter:hover,
@@ -531,11 +606,11 @@ border-radius: 50%;
   padding: 6px 22px;
 }
 
-.button-list .item:hover,
-.button-list .icon:focus {
+.button-list .item:hover, 
+.button-list .item:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
   0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+  0px 2px 2px rgba(0, 0, 0, 0.12); 
   border-radius: 4px;
 }
 
